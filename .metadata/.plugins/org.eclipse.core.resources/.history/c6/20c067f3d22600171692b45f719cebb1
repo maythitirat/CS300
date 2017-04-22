@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PeriodChecker {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int m = scn.nextInt();
+
+		int[][] man = new int[m][n];
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				man[i][j] = scn.nextInt();
+			}
+		}
+		
+		int sum = 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = m - 1; j > 0; j--) {
+				sum = man[i][1]-man[i][0];
+				System.out.println(man[i][j]+" "+man[i][j-1]);
+				if ((man[i][j] - man[i][j - 1] == sum)) {
+//					System.out.println("1 "+sum);
+				}
+				else{
+//					System.out.println("0 ");
+				}
+			}
+		}
+	}
+
+}

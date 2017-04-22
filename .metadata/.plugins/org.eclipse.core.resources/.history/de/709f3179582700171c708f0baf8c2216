@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class FindingDory {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		String a = scn.nextLine();
+		String b = scn.nextLine();
+		
+		String[] dad = a.split(" ");
+		String[] baby = b.split(" ");
+		
+		if(dad.length == baby.length){
+			System.out.println("2");
+		}
+	}
+}

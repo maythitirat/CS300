@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class FindingDory {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		String a = scn.nextLine();
+		String b = scn.nextLine();
+
+		String[] dad = a.split(" ");
+		String[] baby = b.split(" ");
+		ArrayList<String> sort = new ArrayList<>();
+
+		if (dad.length == baby.length) {
+			for (int i = baby.length - 1; i >= 0; i--) {
+				if (dad[i].equalsIgnoreCase(baby[i])) {
+					sort.add(dad[i]);
+					// System.out.print(baby[i]);
+				} else {
+					break;
+				}
+			}
+		} else if (dad.length > baby.length) {
+			int dads = dad.length-1;
+			for (int i = baby.length - 1; i >= 0; i--) {
+				if (baby[i].equalsIgnoreCase(dad[dads])) {
+					sort.add(baby[i]);
+				}
+				else{
+					break;
+				}
+				dads--;
+			}
+		}
+		else{
+			int babys = baby.length-1;
+			for (int i = baby.length - 1; i >= 0; i--) {
+				if (baby[i].equalsIgnoreCase(dad[dads])) {
+					sort.add(baby[i]);
+				}
+				else{
+					break;
+				}
+				dads--;
+			}
+		}
+
+		if (sort.size() == 0) {
+			System.out.println("0");
+		} else {
+			for (int i = sort.size() - 1; i >= 0; i--) {
+				System.out.print(sort.get(i) + " ");
+			}
+		}
+	}
+}

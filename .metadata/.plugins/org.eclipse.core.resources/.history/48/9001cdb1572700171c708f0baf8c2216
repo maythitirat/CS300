@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class FindingDory {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		String a = scn.nextLine();
+		String b = scn.nextLine();
+		ArrayList<String> dad = new ArrayList<>();
+		dad.add(a);
+		ArrayList<String> baby = new ArrayList<>();
+		baby.add(b);
+		int sized = dad.get(0).length();
+		int sizeb = baby.get(0).length();
+		if (sized == sizeb) {
+			for (int i = sized; i >= 0; i--) {
+				if (dad.get(0).charAt(i) == baby.get(0).charAt(i)) {
+					System.out.println(dad.get(i));
+				} else {
+					
+				}
+			}
+		}
+	}
+}

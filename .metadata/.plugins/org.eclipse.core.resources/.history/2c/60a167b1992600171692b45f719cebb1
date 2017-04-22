@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Average {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		ArrayList<Integer> weed = new ArrayList<>();
+		int n = scn.nextInt();
+		for(int i=0;i<n;i++){
+			weed.add(scn.nextInt());
+		}
+		
+		Collections.sort(weed);
+		float a = (30*weed.size())/100;
+		int percent = (int) Math.floor(a);
+		int result = 0;
+		for(int i=0;i<percent;i++){
+			result = result + weed.get(i);
+		}
+		int sum = (int)Math.floor(result/percent);
+		
+
+	}
+
+}

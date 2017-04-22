@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+C:\Users\windows10\Desktop\Practice\CS300\.metadata\.plugins\org.eclipse.jdt.core
+2036918593.index
+3554129516.index

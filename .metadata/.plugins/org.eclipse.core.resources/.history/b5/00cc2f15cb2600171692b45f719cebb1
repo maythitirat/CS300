@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SnowMonster {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int e = scn.nextInt();
+		ArrayList<Integer> d = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			d.add(scn.nextInt());
+		}
+
+		for (int i = 1; i <= d.size(); i++) {
+			for (int j = 1; j <= d.size(); j++) {
+				if (i != j) {
+					int power = d.get(i) + d.get(j);
+					if (power == e) {
+						System.out.println(i);
+						System.out.println(j);
+					}
+				}
+			}
+		}
+
+	}
+
+}

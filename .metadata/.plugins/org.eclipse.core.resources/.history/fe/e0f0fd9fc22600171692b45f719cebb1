@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Number {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		String n = scn.next();
+		ArrayList<String> number = new ArrayList<>();
+		int sum = 0;
+		for (int i = 0; i < number.size(); i++) {
+			sum = sum + Math.pow(Character.getNumericValue(number.get(i)), 2);
+		}
+	}
+
+}

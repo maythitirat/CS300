@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Key {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int start = scn.nextInt();
+		int end = scn.nextInt();
+		ArrayList<Integer> prime = new ArrayList<>();
+		int num = 0;
+		// Empty String
+
+		for (int i = start; i <= end; i++) {
+			int counter = 0;
+			for (num = i; num >= start; num--) {
+				if (i % num == 0) {
+					counter = counter + 1;
+				}
+			}
+			if (counter == 2) {
+				// Appended the Prime number to the String
+				prime.add(i);
+			}
+		}
+		for (int i = 0; i < prime.size(); i++) {
+			System.out.print(prime.get(i)+" ");
+		}
+//		System.out.println(prime.get(1)*prime.get(prime.size()-1));
+	}
+
+}

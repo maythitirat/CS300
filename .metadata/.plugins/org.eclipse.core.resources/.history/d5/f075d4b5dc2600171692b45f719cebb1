@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Key {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int start = scn.nextInt();
+		int end = scn.nextInt();
+		
+		for (int i = start; i <= end; i++) {
+			if(end%i == 0){
+				
+			}
+			System.out.println(i);
+		}
+
+	}
+
+}

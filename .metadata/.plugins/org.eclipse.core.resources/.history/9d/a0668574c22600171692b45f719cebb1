@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Number {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		String n = scn.next();
+		ArrayList<String> number = new ArrayList<>();
+		
+	}
+
+}

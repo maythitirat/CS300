@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PeriodChecker {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int m = scn.nextInt();
+
+		int[][] man = new int[m][n];
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				man[i][j] = scn.nextInt();
+			}
+		}
+		
+		for (int i = 0; i < m; i++) {
+			System.out.println(man[0][i]);
+		}
+	}
+
+}
