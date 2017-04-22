@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class OSWorkbook {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int k = scn.nextInt();
+
+		ArrayList<Integer> number = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			number.add(scn.nextInt());
+		}
+		int page = 0;
+		int result= 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = 1; j <= number.get(i); j++) {
+				if(j%k==1)
+					page++;
+				if(page==j){
+					result++;
+				}
+			}
+		}
+		System.out.println(result);
+	}
+}
