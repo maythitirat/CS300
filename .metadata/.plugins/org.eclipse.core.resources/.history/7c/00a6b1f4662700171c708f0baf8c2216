@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Average {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		ArrayList<Integer> weed = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			weed.add(scn.nextInt());
+		}
+		
+		int divide = (int)Math.ceil(n*0.3);
+
+	}
+
+}

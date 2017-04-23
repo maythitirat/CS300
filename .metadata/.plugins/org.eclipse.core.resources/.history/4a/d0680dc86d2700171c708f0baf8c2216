@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Binary {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		ArrayList<String> a = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			a.add(scn.next());
+		}
+		int mul = scn.nextInt();
+		int total=0;
+		int j = a.size()-1;
+		for (int i = 0; i < a.size(); i++) {
+			total += (a.get(j)*Math.pow(2, i));
+			j--;
+		}
+
+	}
+
+}

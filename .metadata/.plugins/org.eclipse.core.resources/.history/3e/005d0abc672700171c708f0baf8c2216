@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Average {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		double n = scn.nextInt();
+		ArrayList<Integer> weed = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			weed.add(scn.nextInt());
+		}
+		n = (double)n;
+		int divide = Math.ceil(n*0.3);
+		Collections.sort(weed);
+		int sum = 0;
+		for (int i = 0; i < divide; i++) {
+			sum += weed.get(i);
+		}
+		System.out.println((int)sum/divide);
+	}
+
+}
