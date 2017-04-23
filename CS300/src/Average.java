@@ -8,24 +8,19 @@ public class Average {
 		Scanner scn = new Scanner(System.in);
 		ArrayList<Integer> weed = new ArrayList<>();
 		int n = scn.nextInt();
-		for(int i=0;i<n;i++){
+		for (int i = 0; i < n; i++) {
 			weed.add(scn.nextInt());
 		}
-		
 		Collections.sort(weed);
-		double a =  (weed.size()*0.3);
+		double a = (weed.size() * 0.3);
 		int percent = (int) Math.ceil(a);
-//		System.out.println(percent);
-		
+
 		int result = 0;
-		for(int i=0;i<percent;i++){
+		for (int i = 0; i < percent; i++) {
 			result = result + weed.get(i);
 		}
-		
-//		System.out.println(percent);
-		int sum = (int)Math.floor(result/percent);
+		int sum = (int) Math.floor(result / percent);
 		System.out.println(sum);
-		
 
 	}
 

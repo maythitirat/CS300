@@ -23,7 +23,7 @@ public class PeriodChecker {
 			for (int j = m - 1; j > 0; j--) {
 				sum = man[i][j] - man[i][j - 1];
 				count.add(sum);
-				// System.out.println(sum);
+				 System.out.println(sum);
 			}
 //			System.out.println(" ");
 			Collections.sort(count);

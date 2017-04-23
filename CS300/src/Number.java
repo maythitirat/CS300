@@ -6,7 +6,6 @@ public class Number {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		String n = scn.next();
-		ArrayList<String> number = new ArrayList<>();
 		int count = 1;
 		while (true) {
 			// System.out.println("n length: "+n.length());

@@ -13,15 +13,11 @@ public class Bus {
 			h.add(scn.nextInt());
 			m.add(scn.nextInt());
 		}
-
 		int total = 0;
 		for (int i = h.size() - 1; i > 0; i--) {
 			total += (h.get(i) * 60 + m.get(i)) - (h.get(i - 1) * 60 + m.get(i - 1));
-//			System.out.println(total);
 		}
-		int wait = total/(n-1);
+		int wait = total / (n - 1);
 		System.out.println(wait);
-
 	}
-
 }

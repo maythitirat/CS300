@@ -18,17 +18,11 @@ public class Key2 {
 		int end = scn.nextInt();
 		ArrayList<Integer> prime = new ArrayList<>();
 		for (int i = start; i <= end; i++) {
-			if (isPrime(i)) {
+			if (isPrime(i) && i != 1) {
 				prime.add(i);
 			}
 		}
 
-		for (int i = 0; i < prime.size(); i++) {
-			if (prime.get(i) == 1) {
-				prime.remove(i);
-			}
-//			 System.out.print(prime.get(i) + " ");
-		}
 		int total = prime.size();
 
 		if (total == 0) {

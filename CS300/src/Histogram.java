@@ -11,21 +11,14 @@ public class Histogram {
 		}
 
 		int check = 0;
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i <= 9; i++) {
 			int count = 0;
 			for (int j = 0; j < 20; j++) {
-				if(arr.get(j) == check){
+				if (arr.get(j) == i) {
 					count++;
 				}
 			}
 			System.out.println(count);
-			check++;
-			if(check > 9){
-				break;
-			}
 		}
-		
-
 	}
-
 }

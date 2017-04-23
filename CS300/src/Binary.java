@@ -13,18 +13,15 @@ public class Binary {
 		int mul = scn.nextInt();
 		int total = 0;
 		int j = 0;
-		for(int i=n-1;i>=0;i--){
-			total += bit.get(j)*Math.pow(2, i);
+		for (int i = n - 1; i >= 0; i--) {
+			total += bit.get(j) * Math.pow(2, i);
 			j++;
 		}
-		int result = total*mul;
-//		System.out.println(result);
+		int result = total * mul;
 		String binary = Integer.toBinaryString(result);
-		for(int i=0;i<binary.length();i++){
+		for (int i = 0; i < binary.length(); i++) {
 			System.out.println(binary.charAt(i));
 		}
-		
-
 	}
-
+	
 }

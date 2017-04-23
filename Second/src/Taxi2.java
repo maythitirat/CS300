@@ -18,7 +18,7 @@ public class Taxi2 {
 
 		for (int i = 0; i < time.length; i++) {
 			for (int j = i; j < numTaxi.length; j++) {
-				System.out.println(time[i]+" "+time[j]);
+//				System.out.println(time[i]+" "+time[j]);
 				if (Integer.valueOf(time[i]) > Integer.valueOf(time[j])) {
 					temp = time[i];
 					temp2 = numTaxi[i];
